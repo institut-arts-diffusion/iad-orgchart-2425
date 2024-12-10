@@ -31,7 +31,7 @@
 
 		const x = (-dy * padding) / 2;
 
-		return [x, -height / 2, width, height].join(' ');
+		return [x, -height / 2, width+250, height].join(' ');
 	});
 
 	const makeHierarchy = d3
@@ -43,7 +43,7 @@
 		const root = makeHierarchy(items.filter((i) => i.type != 'organisationUnitMember'));
 		//const root = makeHierarchy(items);
 		const padding = 1;
-		const dx = (root.leaves().length + padding);
+		const dx = (root.leaves().length + 15);
 		const dy = width / (root.height + padding);
 		const tree = d3.tree().size([width, height]).nodeSize([dx, dy]);
 
