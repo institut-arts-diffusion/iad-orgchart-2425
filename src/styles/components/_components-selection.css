@@ -1,0 +1,8 @@
+.c-item-selection {
+	top: 1rem;
+	right: 1rem;
+	position: absolute;
+	background: var(--iad-brand-washed);
+	width: 300px;
+	padding: 2rem;
+}

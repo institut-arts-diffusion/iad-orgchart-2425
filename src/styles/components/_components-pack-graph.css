@@ -6,13 +6,15 @@
 	transform: var(--transform);
 	transition: all 0.3s ease-in-out;
 }
-
 .c-pack-item__circle {
-	fill: none;
+	fill: var(--iad-white);
 	stroke: var(--iad-gray7);
-	box-shadow:
-		0 4px 6px -1px rgb(0 0 0 / 0.1),
-		0 2px 4px -2px rgb(0 0 0 / 0.1);
+	transition: all 0.3s ease-in-out;
+}
+.c-pack-item:hover {
+	.c-pack-item__circle {
+		filter: drop-shadow(0 0 4px var(--iad-gray5));
+	}
 }
 
 .c-pack-item[data-type='instance'] .c-pack-item__circle {
@@ -26,4 +28,9 @@
 
 .c-pack-item[data-height='0'] .c-pack-item__circle {
 	fill: var(--color);
+}
+
+
+.c-tree-item{
+	transform: var(--transform);
 }

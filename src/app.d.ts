@@ -37,4 +37,13 @@ export interface Occupation {
 	deleted_at: string;
 }
 
-export { ChartItem };
+interface Datum {
+	x: number;
+	y: number;
+	r: number;
+	depth: number;
+	height: number;
+	data: ChartItem;
+}
+
+export { ChartItem, Datum };
