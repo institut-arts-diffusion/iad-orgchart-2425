@@ -1,0 +1,58 @@
+/* =============================================
+=list bare
+============================================= */
+
+.c-list-bare {
+  list-style: none;
+  margin-inline: 0;
+  padding-inline: 0;
+}
+
+/* =============================================
+=list UI
+============================================= */
+
+.c-list-ui {
+  list-style: none;
+  margin-inline: 0;
+  padding-inline: 0;
+}
+
+.c-list-ui > li:not(:last-child) {
+  border-block-end: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.c-list-ui--small > li {
+  padding-block: calc(18 / 16 * 1rem);
+}
+
+.c-list-ui--medium > li {
+  padding-block: calc(24 / 16 * 1rem);
+}
+
+.c-list-ui--large > li {
+  padding-block: calc(30 / 16 * 1rem);
+}
+
+/* =============================================
+=list spaced
+============================================= */
+
+.c-list-spaced {
+  list-style: none;
+  margin-inline: 0;
+  padding-inline: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.c-list-spaced--xs {
+  row-gap: calc(3 / 16 * 1rem);
+}
+
+.c-list-spaced--s {
+  row-gap: calc(6 / 16 * 1rem);
+}

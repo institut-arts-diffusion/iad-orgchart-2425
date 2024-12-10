@@ -1,0 +1,15 @@
+/* =============================================
+=lead
+============================================= */
+
+.c-lead {
+  font-weight: 400;
+  font-family: var(--fontstack-main);
+  font-size: calc(18 / 16 * 1rem);
+  line-height: 1.42;
+  color: var(--iad-gray4);
+}
+
+.c-lead--inverse {
+  color: var(--iad-gray6);
+}

@@ -1,0 +1,42 @@
+/* =============================================
+=card
+============================================= */
+
+.c-card {
+  margin: 0;
+}
+
+.c-card__media {
+  margin-block-end: calc(30 / 16 * 1rem);
+}
+
+.c-card__title {
+  font-weight: 500;
+  font-family: var(--fontstack-alt1);
+  color: var(--iad-gray1);
+  line-height: 1.24;
+  font-size: clamp(20 / 16 * 1rem, 0.75rem + 1vw, 26 / 16 * 1rem);
+  margin-block-end: calc(18 / 16 * 1rem);
+}
+
+.c-card__medialink {
+  display: block;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.24);
+    opacity: 0;
+
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+}

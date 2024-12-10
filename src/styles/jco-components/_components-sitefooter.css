@@ -1,0 +1,110 @@
+/* =============================================
+=sitefooter
+============================================= */
+
+.c-sitefooter {
+  border-block-start: 1px solid rgba(255, 255, 255, 0.12);
+  background-color: var(--iad-gray1);
+}
+
+/* =============================================
+=sitefooter main (4 units)
+============================================= */
+
+.c-sitefooter__main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    "a"
+    "b"
+    "c"
+    "d";
+  gap: calc(30 / 16 * 1rem);
+
+  padding-block-start: calc(64 / 16 * 1rem);
+  padding-block-end: calc(102 / 16 * 1rem);
+  border-block-end: 1px solid rgba(255, 255, 255, 0.12);
+  background: url(../img/bkg_footer.svg) 50% 100% no-repeat;
+
+  @media (width >= 500px) {
+    padding-block: calc(84 / 16 * 1rem);
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas:
+      "a b"
+      "c d";
+    gap: calc(60 / 16 * 1rem) calc(30 / 16 * 1rem);
+  }
+
+  @media (width >= 750px) {
+    background-image: url(../img/bkg_footer_medium.svg);
+  }
+
+  @media (width >= 1024px) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-areas: "a b c d";
+
+    padding-block: calc(120 / 16 * 1rem);
+
+    background-image: url(../img/bkg_footer_large.svg);
+  }
+}
+
+.c-sitefooter__address {
+  grid-area: a;
+}
+
+.c-sitefooter__info {
+  grid-area: b;
+}
+
+.c-sitefooter__school {
+  grid-area: c;
+}
+
+.c-sitefooter__study {
+  grid-area: d;
+}
+
+/* =============================================
+=sitefooter end (2 units)
+============================================= */
+
+.c-sitefooter__end {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "a"
+    "b";
+  gap: calc(6 / 16 * 1rem);
+
+  padding-block: calc(18 / 16 * 1rem);
+
+  @media (width >= 750px) {
+    padding-block: calc(30 / 16 * 1rem);
+  }
+
+  @media (width >= 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "a b";
+    gap: calc(6 / 16 * 1rem);
+  }
+}
+
+.c-sitefooter__copyright {
+  grid-area: b;
+
+  margin: 0;
+  padding: 0;
+
+  color: var(--iad-gray6);
+  text-decoration: none;
+
+  @media (width >= 1024px) {
+    text-align: right;
+  }
+}
+
+.c-sitefooter__legal {
+  grid-area: a;
+}

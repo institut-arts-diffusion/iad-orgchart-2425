@@ -1,0 +1,60 @@
+/* =============================================
+=message (in pages)
+============================================= */
+
+/* =============================================
+=base classes
+============================================= */
+
+.c-message {
+  --message-background-color: var(--iad-brand-washed);
+
+  background-color: var(--message-background-color);
+  padding-inline: calc(36 / 16 * 1rem);
+  padding-block: calc(30 / 16 * 1rem);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: calc(18 / 16 * 1rem);
+  border-radius: calc(6 / 16 * 1rem);
+}
+
+.c-message__icon {
+  flex: 0 0 auto;
+
+  & svg {
+    display: block;
+  }
+}
+
+.c-message__body {
+  flex: 1 1 100%;
+
+  & *:last-child {
+    margin-block-end: 0;
+  }
+}
+
+.c-message__body a,
+.c-message__body a:hover,
+.c-message__body a:focus {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* =============================================
+=variants
+============================================= */
+
+.c-message--warning {
+  --message-background-color: var(--iad-ui-warning-washed);
+}
+
+.c-message--danger {
+  --message-background-color: var(--iad-ui-danger-washed);
+}
+
+.c-message--success {
+  --message-background-color: var(--iad-ui-success-washed);
+}

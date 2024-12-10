@@ -1,0 +1,44 @@
+/* =============================================
+=module image and text
+============================================= */
+
+.c-mod-imgtxt {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "img"
+    "txt";
+  gap: 42px;
+
+  @media (width >= 750px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "img txt";
+    gap: 60px;
+  }
+
+  @media (width >= 1440px) {
+    grid-template-columns: 5fr 1fr 5fr 1fr;
+    grid-template-areas: "img . txt .";
+    gap: 30px;
+  }
+}
+
+.c-mod-imgtxt--reverse {
+  @media (width >= 750px) {
+    grid-template-areas: "txt img";
+  }
+
+  @media (width >= 1440px) {
+    grid-template-columns: 1fr 5fr 1fr 5fr;
+    grid-template-areas: ". txt . img";
+  }
+}
+
+.c-mod-imgtxt__image {
+  grid-area: img;
+}
+
+.c-mod-imgtxt__text {
+  grid-area: txt;
+  align-self: center;
+}

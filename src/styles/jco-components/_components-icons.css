@@ -1,0 +1,16 @@
+/* =============================================
+=icons (applied to SVG)
+============================================= */
+
+.c-icon {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c-icon--after {
+  margin-inline-start: calc(6 / 16 * 1rem);
+}
+
+.c-icon--before {
+  margin-inline-end: calc(6 / 16 * 1rem);
+}

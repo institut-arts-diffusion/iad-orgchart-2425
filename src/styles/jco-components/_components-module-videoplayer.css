@@ -1,0 +1,29 @@
+/* =============================================
+=module video player
+============================================= */
+
+.c-mod-video {
+  display: bock;
+}
+
+.c-mod-video__player {
+  margin-block-end: calc(24 / 16 * 1rem);
+}
+
+.c-mod-video__description,
+.c-mod-video__copyright {
+  font-size: calc(14 / 16 * 1rem);
+  font-weight: 500;
+  line-height: calc(18 / 14);
+  text-align: center;
+}
+
+.c-mod-video__description {
+  font-weight: 500;
+  color: var(--iad-gray4);
+  margin-block-end: calc(6 / 16 * 1rem);
+}
+
+.c-mod-video__copyright {
+  color: var(--iad-gray6);
+}

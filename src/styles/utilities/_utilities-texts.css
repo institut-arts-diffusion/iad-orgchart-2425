@@ -1,0 +1,77 @@
+/* =====================================
+=text utilities
+===================================== */
+
+/* =====================================
+=text alignments
+===================================== */
+
+.u-text-center {
+  text-align: center !important;
+}
+
+.u-text-end {
+  text-align: end !important;
+}
+
+.u-text-start {
+  text-align: start !important;
+}
+
+/* =====================================
+=text sizes
+===================================== */
+
+.u-text-small {
+  font-size: 1rem !important;
+  line-height: calc(24 / 16) !important;
+}
+
+.u-text-medium {
+  font-size: calc(20 / 16 * 1rem) !important;
+  line-height: calc(30 / 20) !important;
+}
+
+/* =====================================
+=text colors
+===================================== */
+
+.u-text-gray1 {
+  color: var(--iad-gray1) !important;
+}
+
+.u-text-gray2 {
+  color: var(--iad-gray2) !important;
+}
+
+.u-text-gray3 {
+  color: var(--iad-gray3) !important;
+}
+
+.u-text-gray4 {
+  color: var(--iad-gray4) !important;
+}
+
+.u-text-gray5 {
+  color: var(--iad-gray5) !important;
+}
+
+.u-text-gray6 {
+  color: var(--iad-gray6) !important;
+}
+
+.u-text-gray7 {
+  color: var(--iad-gray7) !important;
+}
+
+.u-text-gray8 {
+  color: var(--iad-gray8) !important;
+}
+
+.u-text-white {
+  color: var(--iad-white) !important;
+}
+
+.u-text-black {
+  color: var(--iad-white) !important;
+}

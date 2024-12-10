@@ -1,0 +1,17 @@
+/* =============================================
+=event detail
+============================================= */
+
+.c-detailevent {
+  /* use clamp calculator: from 320 to 1024 screens */
+  --detailevent-spacing: clamp(30px, 1.023rem + 4.261vi, 60px);
+}
+
+.c-detailevent__header {
+  margin-block-end: var(--detailevent-spacing);
+  text-align: center;
+}
+
+.c-detailevent__media {
+  margin-block-end: var(--detailevent-spacing);
+}

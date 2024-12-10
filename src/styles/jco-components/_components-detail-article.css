@@ -1,0 +1,17 @@
+/* =============================================
+=article detail
+============================================= */
+
+.c-detailarticle {
+  /* use clamp calculator: from 320 to 1024 screens */
+  --detailarticle-spacing: clamp(30px, 1.023rem + 4.261vi, 60px);
+}
+
+.c-detailarticle__header {
+  margin-block-end: var(--detailarticle-spacing);
+  text-align: center;
+}
+
+.c-detailarticle__media {
+  margin-block-end: var(--detailarticle-spacing);
+}

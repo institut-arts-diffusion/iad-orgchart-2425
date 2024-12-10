@@ -1,0 +1,21 @@
+/* =============================================
+=audio detail
+============================================= */
+
+.c-detailaudio {
+  /* use clamp calculator: from 320 to 1024 screens */
+  --detailaudio-spacing: clamp(30px, 1.023rem + 4.261vi, 60px);
+}
+
+.c-detailaudio__header {
+  margin-block-end: var(--detailaudio-spacing);
+  text-align: center;
+}
+
+.c-detailaudio__media {
+  margin-block-end: var(--detailaudio-spacing);
+}
+
+.c-detailaudio__content {
+  color: var(--iad-gray6);
+}

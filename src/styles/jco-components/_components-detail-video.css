@@ -1,0 +1,17 @@
+/* =============================================
+=detail video
+============================================= */
+
+.c-detailvideo {
+  /* use clamp calculator: from 320 to 1024 screens */
+  --detailvideo-spacing: clamp(30px, 1.023rem + 4.261vi, 60px);
+}
+
+.c-detailvideo__header {
+  margin-block-end: var(--detailvideo-spacing);
+  text-align: center;
+}
+
+.c-detailvideo__media {
+  margin-block-end: var(--detailvideo-spacing);
+}

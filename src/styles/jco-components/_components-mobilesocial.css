@@ -1,0 +1,31 @@
+/* =============================================
+=mobile social (mobile menu)
+============================================= */
+
+.c-mobilesocial {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: calc(6 / 16 * 1rem);
+}
+
+.c-mobilesocial__link {
+  display: block;
+  color: var(--iad-gray4);
+
+  transition: color 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: var(--iad-brand-dark);
+  }
+
+  & > svg {
+    display: block;
+  }
+}

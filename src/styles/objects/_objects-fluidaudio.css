@@ -1,0 +1,14 @@
+/* =============================================
+=audio player (soundcloud iframe)
+============================================= */
+
+.o-fluidaudio {
+  display: block;
+  inline-size: 100%;
+  block-size: 180px;
+}
+
+.o-fluidaudio > iframe {
+  inline-size: 100%;
+  block-size: 100%;
+}

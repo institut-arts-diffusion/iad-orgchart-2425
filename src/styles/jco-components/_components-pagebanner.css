@@ -1,0 +1,9 @@
+/* =============================================
+=page banner
+============================================= */
+
+.c-pagebanner {
+  /* clamp calculator: from 36px @ 320 screens to 90px @ 1440 screens */
+  --banner-margin-blockend: clamp(30px, 1.286rem + 4.821vi, 90px);
+  margin-block-end: var(--banner-margin-blockend);
+}

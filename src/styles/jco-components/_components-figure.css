@@ -1,0 +1,23 @@
+/* =============================================
+=figure
+============================================= */
+
+/*
+Media with caption: used in articles
+*/
+
+.c-figure {
+  margin: 0;
+  padding: 0;
+}
+
+.c-figure__caption {
+  padding-block: calc(12 / 16 * 1rem);
+
+  font-size: calc(14 / 16 * 1rem);
+  color: var(--iad-gray4);
+}
+
+.c-figure__caption > *:last-child {
+  margin-block-end: 0;
+}

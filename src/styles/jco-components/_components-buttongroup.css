@@ -1,0 +1,23 @@
+/* =============================================
+=button group
+============================================= */
+
+.c-buttongroup {
+  --buttongroup-gap: 18px;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: var(--buttongroup-gap);
+
+  @media (width >= 500px) {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}

@@ -1,0 +1,46 @@
+/* =============================================
+=download
+============================================= */
+
+.c-download {
+  display: block;
+}
+
+.c-download__link {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  text-decoration: none;
+}
+
+.c-download__icon {
+  flex: 0 0 auto;
+  inline-size: 24px;
+  block-size: 24px;
+  margin-inline-end: calc(12 / 16 * 1rem);
+  color: var(--iad-brand);
+}
+
+.c-download__content {
+  flex: 1 1 100%;
+}
+
+.c-download__title {
+  margin-block-end: calc(3 / 16 * 1rem);
+  transition: color 0.2s ease-in-out;
+
+  a:hover & {
+    color: var(--iad-brand-dark);
+  }
+}
+
+.c-download__info {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: calc(14 / 16 * 1rem);
+  font-family: var(--fontstack-main);
+  color: var(--iad-gray6);
+}

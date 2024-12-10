@@ -1,0 +1,14 @@
+/* =============================================
+=fluid videos
+============================================= */
+
+.o-fluidvideo {
+  aspect-ratio: 16 / 9;
+  background-color: var(--iad-gray1);
+
+  & > iframe {
+    height: 100%;
+    width: 100%;
+    border: none;
+  }
+}

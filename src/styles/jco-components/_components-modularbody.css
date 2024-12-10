@@ -1,0 +1,12 @@
+/* =============================================
+=modular body and blocks
+============================================= */
+
+.c-modularbody {
+  padding: 0;
+  margin: 0;
+}
+
+.c-modularbody__block + .c-modularbody__block {
+  margin-block-start: calc(24 / 16 * 1rem);
+}

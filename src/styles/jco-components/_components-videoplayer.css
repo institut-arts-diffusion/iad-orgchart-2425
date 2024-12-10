@@ -1,0 +1,23 @@
+/* =============================================
+=video player
+============================================= */
+
+/*
+- used in video detail page
+*/
+
+.c-videoplayer {
+  margin: 0;
+  padding: 0;
+}
+
+.c-videoplayer__caption {
+  padding-inline: calc(12 / 16 * 1rem);
+
+  font-size: calc(14 / 16 * 1rem);
+  color: var(--iad-gray6);
+}
+
+.c-videoplayer__caption > *:last-child {
+  margin-block-end: 0;
+}

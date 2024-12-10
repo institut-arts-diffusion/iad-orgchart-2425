@@ -1,0 +1,42 @@
+/* =============================================
+=gloabl alerts
+============================================= */
+
+.c-globalalert {
+  --globalalert-background-color: var(--iad-brand);
+  --globalalert-color: var(--iad-gray1);
+}
+
+.c-globalalert__link {
+  display: block;
+  padding: calc(12 / 16 * 1rem) calc(24 / 16 * 1rem);
+  text-align: center;
+
+  font-size: 1rem;
+  background-color: var(--globalalert-background-color);
+  color: var(--globalalert-color);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--globalalert-color);
+  }
+}
+
+.c-globalalert__link:hover > span {
+  text-decoration: underline;
+  text-decoration-color: var(--globalalert-color);
+  text-decoration-thickness: 1px;
+}
+
+/* =============================================
+=variants
+============================================= */
+
+.c-globalalert--warning {
+  --globalalert-background-color: var(--iad-ui-warning);
+}
+
+.c-globalalert--danger {
+  --globalalert-background-color: var(--iad-ui-danger);
+}

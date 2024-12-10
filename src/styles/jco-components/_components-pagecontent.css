@@ -1,0 +1,33 @@
+/* =============================================
+=page content
+============================================= */
+
+/**
+ * - wraps the hole page
+ * - handles background-color
+ * - handles padding
+*/
+
+.c-pagecontent {
+  --color-background: var(--iad-white);
+
+  background-color: var(--color-background);
+
+  padding-block: calc(30 / 16 * 1rem);
+
+  @media (width >= 500px) {
+    padding-block: calc(36 / 16 * 1rem);
+  }
+
+  @media (width >= 750px) {
+    padding-block: calc(48 / 16 * 1rem);
+  }
+
+  @media (width >= 1024px) {
+    padding-block: calc(60 / 16 * 1rem);
+  }
+}
+
+.c-pagecontent--inverse {
+  --color-background: var(--iad-gray1);
+}

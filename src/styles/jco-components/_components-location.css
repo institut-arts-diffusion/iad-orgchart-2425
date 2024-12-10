@@ -1,0 +1,15 @@
+/* =============================================
+=location card (contact page)
+============================================= */
+
+.c-location {
+  margin-block-end: calc(24 / 16 * 1rem);
+}
+
+.c-location__media {
+  margin-block-end: calc(36 / 16 * 1rem);
+}
+
+.c-location__address {
+  margin-block-end: calc(18 / 16 * 1rem);
+}

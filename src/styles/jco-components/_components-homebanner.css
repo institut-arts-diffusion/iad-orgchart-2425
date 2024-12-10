@@ -1,0 +1,44 @@
+/* =============================================
+=home banner
+============================================= */
+
+.c-homebanner {
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  aspect-ratio: 4/3;
+
+  @media (width >= 500px) {
+    aspect-ratio: 16/9;
+  }
+}
+
+.c-homebanner--scribble1 {
+  mask-image: url(../img/scribble1-4by3.svg);
+
+  @media (width >= 500px) {
+    mask-image: url(../img/scribble1-16by9.svg);
+  }
+}
+
+.c-homebanner--scribble2 {
+  mask-image: url(../img/scribble2-4by3.svg);
+
+  @media (width >= 500px) {
+    mask-image: url(../img/scribble2-16by9.svg);
+  }
+}
+
+.c-homebanner--scribble3 {
+  mask-image: url(../img/scribble3-4by3.svg);
+
+  @media (width >= 500px) {
+    mask-image: url(../img/scribble3-16by9.svg);
+  }
+}
+
+.c-homebanner__img {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}

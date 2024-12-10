@@ -1,0 +1,87 @@
+/* SETTINGS */
+@import "settings/_settings-colors.css";
+@import "settings/_settings-typography.css";
+
+/* BASE */
+@import "base/_base-reset.css";
+@import "base/_base-fonts.css";
+@import "base/_base-html.css";
+@import "base/_base-body.css";
+@import "base/_base-animations.css";
+@import "base/_base-links.css";
+
+/* OBJECTS */
+@import "objects/_objects-fluidimage.css";
+@import "objects/_objects-fitimage.css";
+@import "objects/_objects-fluidaudio.css";
+@import "objects/_objects-fluidvideo.css";
+
+/* LAYOUT */
+@import "layouts/_layouts-container.css";
+@import "layouts/_layouts-grid.css";
+@import "layouts/_layouts-split.css";
+
+/* COMPONENTS */
+@import "jco-components/_components-siteheader.css";
+@import "jco-components/_components-mainnav.css";
+@import "jco-components/_components-headersocial.css";
+@import "jco-components/_components-mobilemenu.css";
+@import "jco-components/_components-mobilenav.css";
+@import "jco-components/_components-mobilesocial.css";
+@import "jco-components/_components-sitefooter.css";
+@import "jco-components/_components-titles.css";
+@import "jco-components/_components-footernav.css";
+@import "jco-components/_components-legalnav.css";
+@import "jco-components/_components-pagesections.css";
+@import "jco-components/_components-button.css";
+@import "jco-components/_components-buttongroup.css";
+@import "jco-components/_components-contact.css";
+@import "jco-components/_components-coltext.css";
+@import "jco-components/_components-card.css";
+@import "jco-components/_components-cardslist.css";
+@import "jco-components/_components-newscard.css";
+@import "jco-components/_components-pagetitle.css";
+@import "jco-components/_components-module-imagetext.css";
+@import "jco-components/_components-module-textcards.css";
+@import "jco-components/_components-module-videoplayer.css";
+@import "jco-components/_components-module-quote.css";
+@import "jco-components/_components-teammember.css";
+@import "jco-components/_components-partner.css";
+@import "jco-components/_components-trainingcard.css";
+@import "jco-components/_components-message.css";
+@import "jco-components/_components-categories.css";
+@import "jco-components/_components-icons.css";
+@import "jco-components/_components-pagination.css";
+@import "jco-components/_components-lists.css";
+@import "jco-components/_components-globalalert.css";
+@import "jco-components/_components-location.css";
+@import "jco-components/_components-pagecontent.css";
+@import "jco-components/_components-homebanner.css";
+@import "jco-components/_components-ctalink.css";
+@import "jco-components/_components-detail-article.css";
+@import "jco-components/_components-detail-audio.css";
+@import "jco-components/_components-detail-video.css";
+@import "jco-components/_components-detail-pictures.css";
+@import "jco-components/_components-detail-training.css";
+@import "jco-components/_components-detail-event.css";
+@import "jco-components/_components-metainfo.css";
+@import "jco-components/_components-wysiwyg.css";
+@import "jco-components/_components-lead.css";
+@import "jco-components/_components-modularbody.css";
+@import "jco-components/_components-pagebanner.css";
+@import "jco-components/_components-download.css";
+@import "jco-components/_components-degree.css";
+@import "jco-components/_components-infolinks.css";
+@import "jco-components/_components-footeraddress.css";
+@import "jco-components/_components-eventcard.css";
+@import "jco-components/_components-presspack.css";
+@import "jco-components/_components-figure.css";
+@import "jco-components/_components-videoplayer.css";
+@import "jco-components/_components-audioplayer.css";
+@import "jco-components/_components-pictureslist.css";
+@import "jco-components/_components-pictures.css";
+
+/* UTILITIES */
+@import "utilities/_utilities-scroll.css";
+@import "utilities/_utilities-spacing.css";
+@import "utilities/_utilities-texts.css";

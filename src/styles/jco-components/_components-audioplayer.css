@@ -1,0 +1,26 @@
+/* =============================================
+=audio player
+============================================= */
+
+/*
+- used in audio detail page
+*/
+
+.c-audioplayer {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.c-audioplayer__content {
+  margin-block-end: 1rem;
+}
+
+.c-audioplayer__caption {
+  font-size: calc(14 / 16 * 1rem);
+  color: var(--iad-gray6);
+
+  & > p {
+    margin-block-end: 0;
+  }
+}

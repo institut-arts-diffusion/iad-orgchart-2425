@@ -1,0 +1,47 @@
+/* =============================================
+=containers
+============================================= */
+
+/**
+ * - max-width
+ * - small padding left and right
+ * - centered
+ * - variants for widths
+*/
+
+/* =============================================
+=base classes
+============================================= */
+
+.l-container {
+  --container-max-size: 1280px;
+  --container-padding: 18px;
+
+  margin: 0 auto;
+  padding-inline: var(--container-padding);
+  max-inline-size: var(--container-max-size);
+
+  @media (width >= 750px) {
+    --container-padding: 30px;
+  }
+}
+
+/* =============================================
+=variants (size)
+============================================= */
+
+.l-container--xsmall {
+  --container-max-size: 620px;
+}
+
+.l-container--small {
+  --container-max-size: 820px;
+}
+
+.l-container--medium {
+  --container-max-size: 1024px;
+}
+
+.l-container--large {
+  --container-max-size: 1420px;
+}

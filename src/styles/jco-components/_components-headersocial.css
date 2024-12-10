@@ -1,0 +1,29 @@
+/* =============================================
+=social media (header)
+============================================= */
+
+.c-headersocial {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: calc(3 / 16 * 1rem);
+}
+
+.c-headersocial__link {
+  display: block;
+  color: var(--iad-gray7);
+  transition: color 0.2s ease-in-out;
+
+  & > svg {
+    display: block;
+  }
+
+  &:hover {
+    color: var(--iad-brand-dark);
+  }
+}

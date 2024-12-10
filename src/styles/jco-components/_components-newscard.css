@@ -1,0 +1,101 @@
+/* =============================================
+=news card
+============================================= */
+
+.c-newscard {
+  margin-block-end: 1rem;
+}
+
+.c-newscard__blocklink {
+  display: block;
+  text-decoration: none;
+}
+
+.c-newscard__media {
+  position: relative;
+  border: 1px solid var(--iad-gray7);
+  margin-block-end: calc(18 / 16 * 1rem);
+  background-color: var(--iad-gray7);
+}
+
+.c-newscard__media::before {
+  content: "";
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  background-color: rgba(0, 0, 0, 0.42);
+  opacity: 0;
+
+  transition: opacity 0.2s ease-in-out;
+}
+
+.c-newscard:hover .c-newscard__media::before,
+.c-newscard:focus .c-newscard__media::before {
+  opacity: 1;
+}
+
+.c-newscard__media::after {
+  content: "";
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
+  inline-size: 60px;
+  block-size: 60px;
+  transform: translate3d(-50%, calc(24px + -50%), 0);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.c-newscard:hover .c-newscard__media::after,
+.c-newscard:focus .c-newscard__media::after {
+  transform: translate3d(-50%, -50%, 0);
+  opacity: 1;
+}
+
+.c-newscard--video .c-newscard__media::after {
+  background-image: url(../img/icon-video.svg);
+}
+
+.c-newscard--audio .c-newscard__media::after {
+  background-image: url(../img/icon-audio.svg);
+}
+
+.c-newscard--article .c-newscard__media::after {
+  background-image: url(../img/icon-article.svg);
+}
+
+.c-newscard--pictures .c-newscard__media::after {
+  background-image: url(../img/icon-pictures.svg);
+}
+
+.c-newscard--event .c-newscard__media::after {
+  background-image: url(../img/icon-event.svg);
+}
+
+.c-newscard__date {
+  font-size: 1rem;
+  color: var(--iad-gray4);
+  margin-block-end: calc(6 / 16 * 1rem);
+}
+
+.c-newscard__title {
+  margin-block-end: calc(18 / 16 * 1rem);
+
+  font-family: var(--fontstack-alt1);
+  font-weight: 500;
+  font-size: calc(20 / 16 * 1rem);
+  line-height: 1.36;
+  color: var(--iad-gray2);
+
+  transition: color 0.2s ease-in-out;
+}
+
+.c-newscard:hover .c-newscard__title,
+.c-newscard:focus .c-newscard__title {
+  color: var(--iad-brand-dark);
+}

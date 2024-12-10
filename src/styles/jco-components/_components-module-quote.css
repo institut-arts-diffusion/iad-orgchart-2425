@@ -1,0 +1,42 @@
+/* =============================================
+=module quote
+============================================= */
+
+.c-mod-quote {
+  position: relative;
+  padding-inline-start: calc(42 / 16 * 1rem);
+  margin-block: calc(36 / 16 * 1rem);
+}
+
+.c-mod-quote::before {
+  content: "";
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inline-size: 24px;
+  block-size: 17px;
+  background-image: url(../img/icon-openquote.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.c-mod-quote__text {
+  font-weight: 500;
+  font-size: calc(20 / 16 * 1rem);
+  line-height: 1.44;
+  font-family: var(--fontstack-alt2);
+
+  & *:last-child {
+    margin-block-end: calc(12 / 16 * 1rem);
+  }
+
+  @media (width >= 1024px) {
+    font-size: calc(26 / 16 * 1rem);
+    line-height: 1.32;
+  }
+}
+
+.c-mod-quote__author {
+  font-style: normal;
+  color: var(--iad-gray6);
+}

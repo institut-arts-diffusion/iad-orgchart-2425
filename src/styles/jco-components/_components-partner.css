@@ -1,0 +1,17 @@
+/* =============================================
+=partner
+============================================= */
+
+.c-partner {
+  display: block;
+}
+
+.c-partner__link {
+  display: block;
+  border: 1px solid var(--iad-gray7);
+}
+
+.c-partner__logo {
+  display: block;
+  filter: grayscale(1);
+}

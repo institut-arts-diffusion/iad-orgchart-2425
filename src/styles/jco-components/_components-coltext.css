@@ -1,0 +1,66 @@
+/* =============================================
+=columns text
+============================================= */
+
+/* =============================================
+=base classes
+============================================= */
+
+.c-coltext {
+  column-gap: calc(36 / 16 * 1rem);
+  & > p {
+    break-inside: avoid-column;
+  }
+}
+
+.c-coltext--2cols {
+  column-count: 2;
+}
+
+.c-coltext--3cols {
+  column-count: 3;
+}
+
+/* =============================================
+=responsive classes
+============================================= */
+
+@media (width >= 500px) {
+  .c-coltext--2cols\@small {
+    column-count: 2;
+  }
+
+  .c-coltext--3cols\@small {
+    column-count: 3;
+  }
+}
+
+@media (width >= 750px) {
+  .c-coltext--2cols\@medium {
+    column-count: 2;
+  }
+
+  .c-coltext--3cols\@medium {
+    column-count: 3;
+  }
+}
+
+@media (width >= 1024px) {
+  .c-coltext--2cols\@large {
+    column-count: 2;
+  }
+
+  .c-coltext--3cols\@large {
+    column-count: 3;
+  }
+}
+
+@media (width >= 1440px) {
+  .c-coltext--2cols\@xlarge {
+    column-count: 2;
+  }
+
+  .c-coltext--3cols\@xlarge {
+    column-count: 3;
+  }
+}

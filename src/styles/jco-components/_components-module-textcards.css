@@ -1,0 +1,48 @@
+/* =============================================
+=module text cards
+============================================= */
+
+.c-mod-txtcards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "intro"
+    "main";
+  gap: 30px;
+
+  @media (width >= 1024px) {
+    grid-template-columns: 4fr 8fr;
+    grid-template-areas: "intro main";
+    gap: 60px;
+  }
+
+  @media (width >= 1440px) {
+    grid-template-columns: 4fr 1fr 7fr;
+    grid-template-areas: "intro . main";
+    gap: 30px;
+  }
+}
+
+.c-mod-txtcards__intro {
+  grid-area: intro;
+}
+
+.c-mod-txtcards__main {
+  grid-area: main;
+}
+
+/* =============================================
+=reverse variant
+============================================= */
+
+.c-mod-txtcards--reverse {
+  @media (width >= 1024px) {
+    grid-template-columns: 8fr 4fr;
+    grid-template-areas: "main intro";
+  }
+
+  @media (width >= 1440px) {
+    grid-template-columns: 7fr 1fr 4fr;
+    grid-template-areas: "main . intro";
+  }
+}

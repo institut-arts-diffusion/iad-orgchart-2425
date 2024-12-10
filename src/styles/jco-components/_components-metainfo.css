@@ -1,0 +1,19 @@
+/* =============================================
+=meta info
+============================================= */
+
+/*
+Used in detail pages for all types of news, events, trainings and degrees
+*/
+
+.c-metainfo {
+  --color-text: var(--iad-gray4);
+
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.c-metainfo--inverse {
+  --color-text: var(--iad-gray6);
+}

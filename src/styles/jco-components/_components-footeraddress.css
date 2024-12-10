@@ -1,0 +1,22 @@
+/* =============================================
+=footer address
+============================================= */
+
+.c-footeraddress {
+  font-size: 1rem;
+  line-height: calc(24 / 16);
+  color: var(--iad-gray6);
+  margin-block-end: calc(24 / 16 * 1rem);
+}
+
+.c-footeraddress a {
+  color: var(--iad-gray6);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--iad-gray7);
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.5);
+  }
+}

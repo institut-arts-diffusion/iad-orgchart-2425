@@ -1,0 +1,44 @@
+/* =============================================
+=pagination
+============================================= */
+
+.c-pagination {
+  list-style: none;
+  margin: calc(42 / 16 * 1rem) 0 0;
+  padding: calc(30 / 16 * 1rem) 0 0;
+  border-block-start: 1px solid rgba(0, 0, 0, 0.12);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: calc(3 / 16 * 1rem);
+}
+
+.c-pagination__link {
+  display: inline-block;
+  padding: calc(10 / 16 * 1rem) calc(10 / 16 * 1rem);
+
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1;
+  text-decoration: none;
+  color: var(--iad-gray5);
+
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    text-decoration: none;
+    color: var(--iad-gray1);
+  }
+}
+
+.c-pagination__link.is-current {
+  border: 2px solid var(--iad-brand);
+  border-radius: 3px;
+
+  &:hover {
+    text-decoration: none;
+    color: var(--iad-gray5);
+  }
+}

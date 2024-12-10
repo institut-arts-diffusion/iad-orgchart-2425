@@ -1,0 +1,125 @@
+/* =============================================
+=splits
+============================================= */
+
+/* =============================================
+=base classes
+============================================= */
+
+.l-split {
+  --split-colgap: 0;
+  --split-rowgap: 0;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--split-rowgap) var(--split-colgap);
+}
+
+.l-split--gap {
+  --split-colgap: 30px;
+  --split-rowgap: 30px;
+}
+
+.l-split--colgap {
+  --split-colgap: 30px;
+}
+
+.l-split--rowgap {
+  --split-rowgap: 30px;
+}
+
+/* =============================================
+=split half
+============================================= */
+
+.l-split--half {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (width >= 500px) {
+  .l-split--half\@small {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (width >= 750px) {
+  .l-split--half\@medium {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (width >= 1024px) {
+  .l-split--half\@large {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (width >= 1440px) {
+  .l-split--half\@xlarge {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* =============================================
+=split 1fr2fr
+============================================= */
+
+.l-split--1fr2fr {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+}
+
+@media (width >= 500px) {
+  .l-split--1fr2fr\@small {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  }
+}
+
+@media (width >= 750px) {
+  .l-split--1fr2fr\@medium {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  }
+}
+
+@media (width >= 1024px) {
+  .l-split--1fr2fr\@large {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  }
+}
+
+@media (width >= 1440px) {
+  .l-split--1fr2fr\@xlarge {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  }
+}
+
+/* =============================================
+=split 2fr1fr
+============================================= */
+
+.l-split--2fr1fr {
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+}
+
+@media (width >= 500px) {
+  .l-split--2fr1fr\@small {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  }
+}
+
+@media (width >= 750px) {
+  .l-split--2fr1fr\@medium {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  }
+}
+
+@media (width >= 1024px) {
+  .l-split--2fr1fr\@large {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  }
+}
+
+@media (width >= 1440px) {
+  .l-split--2fr1fr\@xlarge {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  }
+}

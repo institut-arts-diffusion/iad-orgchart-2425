@@ -1,0 +1,22 @@
+/* =============================================
+=Call to action link (CTA link)
+============================================= */
+
+.c-ctalink {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1rem;
+
+  padding-block-end: 3px;
+  text-decoration: none;
+  border-block-end: 3px solid var(--iad-brand);
+  color: var(--iad-gray1);
+
+  transition: border-color 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    border-color: var(--iad-brand-dark);
+    color: var(--iad-gray1);
+  }
+}

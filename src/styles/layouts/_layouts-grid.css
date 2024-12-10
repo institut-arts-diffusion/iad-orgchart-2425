@@ -1,0 +1,344 @@
+/* =============================================
+=grids
+============================================= */
+
+/* =============================================
+=base styles
+============================================= */
+
+.l-grid {
+  --grid-colgap: 0;
+  --grid-rowgap: 0;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--grid-rowgap) var(--grid-colgap);
+}
+
+/* =============================================
+=gaps
+============================================= */
+
+.l-grid--colgap {
+  --grid-colgap: 30px;
+}
+
+.l-grid--colgap-m {
+  --grid-colgap: 42px;
+}
+
+.l-grid--colgap-l {
+  --grid-colgap: 60px;
+}
+
+.l-grid--rowgap {
+  --grid-rowgap: 30px;
+}
+
+.l-grid--rowgap-m {
+  --grid-rowgap: 42px;
+}
+
+.l-grid--rowgap-l {
+  --grid-rowgap: 60px;
+}
+
+.l-grid--gap {
+  --grid-colgap: 30px;
+  --grid-rowgap: 30px;
+}
+
+.l-grid--gap-m {
+  --grid-colgap: 42px;
+  --grid-rowgap: 42px;
+}
+
+.l-grid--gap-l {
+  --grid-colgap: 60px;
+  --grid-rowgap: 60px;
+}
+
+/* =============================================
+=fluid grids
+============================================= */
+
+.l-grid--fluid {
+  --grid-item-min: 250px;
+  grid-template-columns: repeat(auto-fit, minmax(var(--grid-item-min), 1fr));
+}
+
+.l-grid--fluid-s {
+  --grid-item-min: 180px;
+}
+
+/* =============================================
+=column grids
+============================================= */
+
+.l-grid--2cols {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.l-grid--3cols {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.l-grid--4cols {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+/* =============================================
+=responsive gaps
+============================================= */
+
+/* small */
+@media (width >= 500px) {
+  .l-grid--colgap\@small {
+    --grid-colgap: 30px;
+  }
+
+  .l-grid--colgap-m\@small {
+    --grid-colgap: 42px;
+  }
+
+  .l-grid--colgap-l\@small {
+    --grid-colgap: 60px;
+  }
+
+  .l-grid--rowgap\@small {
+    --grid-rowgap: 30px;
+  }
+
+  .l-grid--rowgap-m\@small {
+    --grid-rowgap: 42px;
+  }
+
+  .l-grid--rowgap-l\@small {
+    --grid-rowgap: 60px;
+  }
+
+  .l-grid--gap\@small {
+    --grid-colgap: 30px;
+    --grid-rowgap: 30px;
+  }
+
+  .l-grid--gap-m\@small {
+    --grid-colgap: 42px;
+    --grid-rowgap: 42px;
+  }
+
+  .l-grid--gap-l\@small {
+    --grid-colgap: 60px;
+    --grid-rowgap: 60px;
+  }
+}
+
+/* medium */
+@media (width >= 750px) {
+  .l-grid--colgap\@medium {
+    --grid-colgap: 30px;
+  }
+
+  .l-grid--colgap-m\@medium {
+    --grid-colgap: 42px;
+  }
+
+  .l-grid--colgap-l\@medium {
+    --grid-colgap: 60px;
+  }
+
+  .l-grid--rowgap\@medium {
+    --grid-rowgap: 30px;
+  }
+
+  .l-grid--rowgap-m\@medium {
+    --grid-rowgap: 42px;
+  }
+
+  .l-grid--rowgap-l\@medium {
+    --grid-rowgap: 60px;
+  }
+
+  .l-grid--gap\@medium {
+    --grid-colgap: 30px;
+    --grid-rowgap: 30px;
+  }
+
+  .l-grid--gap-m\@medium {
+    --grid-colgap: 42px;
+    --grid-rowgap: 42px;
+  }
+
+  .l-grid--gap-l\@medium {
+    --grid-colgap: 60px;
+    --grid-rowgap: 60px;
+  }
+}
+
+/* large */
+@media (width >= 1024px) {
+  .l-grid--colgap\@large {
+    --grid-colgap: 30px;
+  }
+
+  .l-grid--colgap-m\@large {
+    --grid-colgap: 42px;
+  }
+
+  .l-grid--colgap-l\@large {
+    --grid-colgap: 60px;
+  }
+
+  .l-grid--rowgap\@large {
+    --grid-rowgap: 30px;
+  }
+
+  .l-grid--rowgap-m\@large {
+    --grid-rowgap: 42px;
+  }
+
+  .l-grid--rowgap-l\@large {
+    --grid-rowgap: 60px;
+  }
+
+  .l-grid--gap\@large {
+    --grid-colgap: 30px;
+    --grid-rowgap: 30px;
+  }
+
+  .l-grid--gap-m\@large {
+    --grid-colgap: 42px;
+    --grid-rowgap: 42px;
+  }
+
+  .l-grid--gap-l\@large {
+    --grid-colgap: 60px;
+    --grid-rowgap: 60px;
+  }
+}
+
+/* xlarge */
+@media (width >= 1440px) {
+  .l-grid--colgap\@xlarge {
+    --grid-colgap: 30px;
+  }
+
+  .l-grid--colgap-m\@xlarge {
+    --grid-colgap: 42px;
+  }
+
+  .l-grid--colgap-l\@xlarge {
+    --grid-colgap: 60px;
+  }
+
+  .l-grid--rowgap\@xlarge {
+    --grid-rowgap: 30px;
+  }
+
+  .l-grid--rowgap-m\@xlarge {
+    --grid-rowgap: 42px;
+  }
+
+  .l-grid--rowgap-l\@xlarge {
+    --grid-rowgap: 60px;
+  }
+
+  .l-grid--gap\@xlarge {
+    --grid-colgap: 30px;
+    --grid-rowgap: 30px;
+  }
+
+  .l-grid--gap-m\@xlarge {
+    --grid-colgap: 42px;
+    --grid-rowgap: 42px;
+  }
+
+  .l-grid--gap-l\@xlarge {
+    --grid-colgap: 60px;
+    --grid-rowgap: 60px;
+  }
+}
+
+/* =============================================
+=responsive columns
+============================================= */
+
+/* small */
+@media (width >= 500px) {
+  .l-grid--full\@small {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .l-grid--2cols\@small {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .l-grid--3cols\@small {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .l-grid--4cols\@small {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* medium */
+@media (width >= 750px) {
+  .l-grid--full\@medium {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .l-grid--2cols\@medium {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .l-grid--3cols\@medium {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .l-grid--4cols\@medium {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* large */
+@media (width >= 1024px) {
+  .l-grid--full\@large {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .l-grid--2cols\@large {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .l-grid--3cols\@large {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .l-grid--4cols\@large {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* xlarge */
+@media (width >= 1440px) {
+  .l-grid--full\@xlarge {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .l-grid--2cols\@xlarge {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .l-grid--3cols\@xlarge {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .l-grid--4cols\@xlarge {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

@@ -1,0 +1,21 @@
+/* =============================================
+=page title
+============================================= */
+
+.c-pagetitle {
+  max-width: 18ch;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: clamp(
+    calc(36 / 16 * 1rem),
+    calc(1rem + 5vw),
+    calc(83 / 16 * 1rem)
+  );
+  line-height: 1.18;
+  font-family: var(--fontstack-alt2);
+  text-align: center;
+
+  & > span {
+    color: var(--iad-brand-dark);
+  }
+}

@@ -1,0 +1,111 @@
+/* =============================================
+=mobile menu
+============================================= */
+
+/*
+Flex in flex for layout
+- .c-mobilemenu is in flex;
+  - c-mobilemenu__actions is set as flex: 0 0 auto;
+  - c-mobilemenu__body 
+    - is set as flex: 1 1 100%;
+    - is also a flex container to align the nav and social media vertically in the center
+*/
+
+.c-mobilemenu {
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+
+  overflow-y: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  background-color: var(--iad-gray1);
+
+  @media (width >= 1024px) {
+    display: none;
+  }
+}
+
+.c-mobilemenu__actions {
+  flex: 0 0 auto;
+
+  margin: 0;
+  border-block-end: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.c-mobilemenu__close {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  text-align: start;
+  padding: calc(30 / 16 * 1rem) calc(18 / 16 * 1rem);
+  border: none;
+
+  background: url(../img/icon-close.svg) calc(100% - 18px) 50% no-repeat;
+
+  font-size: calc(14 / 16 * 1rem);
+  line-height: calc(18 / 14);
+  color: var(--iad-gray5);
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition: color 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: var(--iad-white);
+  }
+
+  @media (width >= 750px) {
+    padding: calc(36 / 16 * 1rem) calc(30 / 16 * 1rem);
+    background-position: calc(100% - 30px) 50%;
+  }
+}
+
+.c-mobilemenu__body {
+  flex: 1 1 100%;
+  padding: calc(18 / 16 * 1rem);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 18px;
+
+  @media (width>=750px) {
+    gap: 36px;
+    padding: calc(30 / 16 * 1rem);
+  }
+}
+
+/* =============================================
+=animations
+============================================= */
+
+.c-mobilemenu {
+  display: none;
+}
+
+.c-mobilemenu.is-active {
+  display: flex;
+
+  @media (width >= 1024px) {
+    display: none;
+  }
+}
+
+.is-active .c-mobilemenu__nav {
+  animation: ease-out 0.2s both slideFromLeft;
+}
+
+.is-active .c-mobilemenu__social {
+  animation: 0.1s ease-out 0.2s both slideFromLeft;
+}

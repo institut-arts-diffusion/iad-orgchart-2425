@@ -1,0 +1,30 @@
+/* =============================================
+=pictures (in picture galleries)
+============================================= */
+
+.c-picture {
+  margin: 0;
+  padding: 0;
+}
+
+.c-picture__img {
+  display: block;
+  margin-block-end: calc(18 / 16 * 1rem);
+}
+
+.c-picture__text {
+  @media (width >= 750px) {
+    margin-inline-end: 12%;
+  }
+}
+
+.c-picture__legend {
+  font-size: 1rem;
+  margin-block-end: calc(3 / 16 * 1rem);
+  color: var(--iad-gray6);
+}
+
+.c-picture__credit {
+  font-size: 1rem;
+  color: var(--iad-gray5);
+}

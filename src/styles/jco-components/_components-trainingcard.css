@@ -1,0 +1,66 @@
+/* =============================================
+=training card
+============================================= */
+
+.c-training {
+  display: block;
+}
+
+.c-training__blocklink {
+  display: block;
+  text-decoration: none;
+}
+
+.c-training__media {
+  overflow: hidden;
+  position: relative;
+  margin-block-end: 0;
+  background-color: var(--iad-gray7);
+}
+
+.c-training__image {
+  transition: transform 0.2s ease-out;
+
+  a:hover &,
+  a:focus & {
+    transform: scale(1.018);
+  }
+}
+
+.c-training__title {
+  margin-block-end: calc(6 / 16 * 1rem);
+  transition: color 0.2s ease-in-out;
+
+  a:hover &,
+  a:focus & {
+    color: var(--iad-brand-dark);
+  }
+}
+
+.c-training__body {
+  position: relative;
+  margin-block-start: -42px;
+  margin-inline: 12px;
+  padding: calc(18 / 16 * 1rem);
+  background-color: var(--iad-white);
+  color: var(--iad-gray2);
+
+  @media (width >= 500px) {
+    margin-inline: 24px;
+  }
+
+  @media (width >= 750px) {
+    margin-block-start: -48px;
+    margin-inline: 18px;
+  }
+
+  @media (width >= 1024px) {
+    margin-block-start: -54px;
+    padding: calc(36 / 16 * 1rem) calc(30 / 16 * 1rem);
+    margin-inline: 24px;
+  }
+
+  @media (width >= 1440px) {
+    margin-inline: 36px;
+  }
+}
