@@ -38,6 +38,10 @@
 		console.log('onSelect', data);
 		currentSelection = data;
 	};
+
+	let closeSelection = ()=>{
+		currentSelection = null;
+	}
 </script>
 
 <div class="c-fullscreen-svg" bind:this={containerElement}>
@@ -54,6 +58,7 @@
 	{/if}
 	{#if currentSelection}
 		<div class="c-item-selection">
+			<button onclick={closeSelection} class="c-close-btn">X</button>
 			{#if currentSelection.data.person}
 				<div>
 					<h5 class="c-suptitle">{currentSelection.data.name}</h5>

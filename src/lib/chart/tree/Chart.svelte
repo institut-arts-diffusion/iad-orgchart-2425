@@ -43,7 +43,7 @@
 		const root = makeHierarchy(items.filter((i) => i.type != 'organisationUnitMember'));
 		//const root = makeHierarchy(items);
 		const padding = 1;
-		const dx = width / (root.leaves().length + padding);
+		const dx = (root.leaves().length + padding);
 		const dy = width / (root.height + padding);
 		const tree = d3.tree().size([width, height]).nodeSize([dx, dy]);
 
@@ -59,7 +59,6 @@
 		height = svgElement.clientHeight;
 		graph = computeTree();
 	});
-	let onClick = function () {};
 </script>
 
 <svg {width} {height} bind:this={svgElement} class="c-svg" {viewBox}>

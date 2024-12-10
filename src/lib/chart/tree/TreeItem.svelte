@@ -21,12 +21,15 @@
 
 <g target="_blank" class="c-tree-item" bind:this={element}>
 	<circle r={2.5} fill={data.children ? '#555' : '#999'} />
-	<a href="/" onclick={onClick}>
+	<a href="/" onclick={onClick} class="c-tree-item__link">
 		<text
 			x={data.children ? -6 : 6}
 			dy="0.32em"
 			text-anchor={data.children ? 'end' : 'start'}
-			paint-order="stroke">{data.data.name}</text
+			paint-order="stroke"
+			class="c-tree-item__text"
 		>
+			{data.data.name}
+		</text>
 	</a>
 </g>

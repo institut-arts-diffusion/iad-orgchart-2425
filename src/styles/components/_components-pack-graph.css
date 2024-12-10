@@ -31,6 +31,15 @@
 }
 
 
+.c-tree-item__text{
+	width: 5rem;
+	display: block;
+}
+.c-tree-item__link{
+	text-decoration: none;
+}
+
+
 .c-tree-item{
 	transform: var(--transform);
 }
