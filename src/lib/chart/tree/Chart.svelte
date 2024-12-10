@@ -1,17 +1,15 @@
 <script lang="ts">
 	import * as d3 from 'd3';
-	import type { ChartItem } from '../../app';
+	import type { ChartItem } from '../../../app';
 	import type { HierarchyNode } from 'd3';
 
 	const curve = d3.curveBumpX;
 	const padding = 1;
 
-	let { items }: { items: ChartItem[] } = $props();
+	let { items, width, height }: { width: number; height: number; items: ChartItem[] } = $props();
 	let svgElement: SVGElement;
 	console.log(items);
 
-	let width = $state(0);
-	let height = $state(0);
 	let graph: HierarchyNode<ChartItem[]> | null = $state(null);
 
 	let viewBox = $derived.by(() => {
@@ -59,7 +57,7 @@
 	$inspect(graph?.links);
 </script>
 
-<svg width="100%" height="100%" bind:this={svgElement} class="c-svg" {viewBox}>
+<svg {width} {height} bind:this={svgElement} class="c-svg" {viewBox}>
 	{#if graph}
 		<g fill="none" fill-rule="evenodd" stroke="#555" stroke-opacity={0.4} stroke-width={1.5}>
 			{#each graph.links() as link}

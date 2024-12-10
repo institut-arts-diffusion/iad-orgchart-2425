@@ -1,7 +1,9 @@
 :root {
 	--color: var(--iad-gray8);
+	--transform: none;
 }
 .c-pack-item {
+	transform: var(--transform);
 	transition: all 0.3s ease-in-out;
 }
 
@@ -24,12 +26,4 @@
 
 .c-pack-item[data-height='0'] .c-pack-item__circle {
 	fill: var(--color);
-}
-
-.c-pack-item__circle:hover {
-	fill: var(--iad-ui-danger);
-
-	box-shadow:
-			0 10px 15px -3px rgb(0 0 0 / 0.1),
-			0 4px 6px -4px rgb(0 0 0 / 0.1);
 }

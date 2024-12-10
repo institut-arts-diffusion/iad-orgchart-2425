@@ -3,4 +3,5 @@
     height: auto;
     position: fixed;
     z-index: 99;
+    pointer-events: none;
 }
